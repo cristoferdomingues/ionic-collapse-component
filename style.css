@@ -1,0 +1,22 @@
+/* Styles go here */
+
+.collHeader {
+    max-height: 78px;
+}
+
+.leftHeader {
+    background-color: #4876FF;
+    color: white;
+    font-weight: bold;
+    height: 90px;
+    margin-left: -26%;
+    margin-top: -27%;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+.leftHeader span {
+    position: relative;
+    top: 30%;
+}
