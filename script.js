@@ -16,9 +16,7 @@ angular.module('app', ['ionic'])
     };
 
     this.showHide = function() {
-      console.log('showHide');
       this.showHideFlag = !this.showHideFlag;
-      console.log( this.showHideFlag);
     };
   }
 })
