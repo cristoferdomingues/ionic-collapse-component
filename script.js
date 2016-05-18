@@ -7,7 +7,8 @@ angular.module('app', ['ionic'])
   transclude:true,
   bindings: { 
     title: '=',
-    leftHeaderIdentifier:'='
+    leftHeaderIdentifier:'=',
+    headerIcon: '='
   },
   controller: function() {
 
