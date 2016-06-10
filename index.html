@@ -8,11 +8,30 @@
   <script src="script.js"></script>
 </head>
 
-<body>
+<body ng-controller="appCtrl">
   <h1>Ionic 1.3 Collapse Component</h1>
-  <collapse-container title="'Collapse Teste'" left-header-identifier="1" header-icon="'ion-clock assertive'">
-    <collapse-body>oi</collapse-body>
-  </collapse-container>
+  
+    <collapse-container is-valid="validaForm('forma')" title="'Collapse Teste'" left-header-identifier="1" header-icon="'ion-clock assertive'">
+      <collapse-body>
+        <form name="forma" ng-init="setForm(this,'forma')">
+          <input type="text" ng-model="objeto.nome" required/>
+          <input type="number" ng-model="objeto.idade" required/> 
+        </form>
+        oi {{forma.$valid}}
+      </collapse-body>
+    </collapse-container>
+    
+    
+    <collapse-container is-valid="validaForm('formTeste')" title="'Collapse Teste1'" left-header-identifier="2" header-icon="'ion-clock assertive'">
+      <collapse-body>
+        <form name="formTeste" ng-init="setForm(this,'formTeste')">
+          <input type="text" ng-model="objeto1.nome" required/>
+          <input type="number" ng-model="objeto1.idade" required/> 
+        </form>
+        oi {{formTeste.$valid}}
+      </collapse-body>
+    </collapse-container>
+
 </body>
 
 </html>
